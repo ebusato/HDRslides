@@ -1,0 +1,176 @@
+<html>
+<img src="http://chart.apis.google.com/chart?
+cht=p
+&amp;chs=1000x250
+&amp;chd=t:20,39,30,9.8,1.2
+&amp;chco=
+FFFF00,
+0099FF,
+FF0033,
+336600,
+000000
+&amp;chl=All jets (20%)|
+1 lepton %2B jets (39%)|
+2 leptons %2B jets (30%)|
+3 leptons %2B jets (9.8%)|
+4 leptons %2B jets (1.2%)"
+alt="Sample chart" />
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="http://chart.apis.google.com/chart?
+cht=p
+&amp;chs=1000x250
+&amp;chd=t:
+20,
+13,
+13,
+13,
+20,
+10,
+9.8,
+1.2
+&amp;chco=
+FFFF00,
+00CCFF,
+0099FF,
+0066FF,
+FF3333,
+FF0033,
+336600,
+000000
+&amp;chl=
+All jets (20%)|
+1 electron %2B jets (13%)|
+1 muon %2B jets (13%)|
+1 tau %2B jets (13%)|
+2 leptons (opposite charge) %2B jets (20%)|
+2 leptons (same charge) %2B jets (10%)|
+3 leptons %2B jets (9.8%)|
+4 leptons %2B jets (1.2%)"
+alt="Sample chart" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<img src="http://chart.apis.google.com/chart?
+cht=p
+&amp;chs=1000x250
+&amp;chd=t:
+20,
+13,
+13,
+13,
+20,
+5.5,
+4.5,
+9.8,
+1.2
+&amp;chco=
+FFFF00,
+00CCFF,
+0099FF,
+0066FF,
+FF6666,
+FF3333,
+FF0000,
+336600,
+000000
+&amp;chl=
+All jets (20%)|
+1 electron %2B jets (13%)|
+1 muon %2B jets (13%)|
+1 tau %2B jets (13%)|
+2 leptons (opposite charge) %2B jets (20%)|
+2 leptons (with tau - same charge) %2B jets (5.5%)|
+2 leptons (e,mu - same charge) %2B jets (4.5%)|
+3 leptons %2B jets (9.8%)|
+4 leptons %2B jets (1.2%)"
+alt="Sample chart" />
+
+
+<br>
+<br>
+
+<img src="http://chart.apis.google.com/chart?
+cht=p
+&amp;chs=1000x250
+&amp;chd=t:
+20,
+13,
+13,
+13,
+20,
+5.5,
+4.5,
+6.9,
+2.9,
+1.2
+&amp;chco=
+FFFF00,
+00CCFF,
+0099FF,
+0066FF,
+FF6666,
+FF3333,
+FF0000,
+339900,
+336600,
+000000
+&amp;chl=
+All jets (20%)|
+1 electron %2B jets (13%)|
+1 muon %2B jets (13%)|
+1 tau %2B jets (13%)|
+2 leptons (opposite charge) %2B jets (20%)|
+2 leptons (&#8805 1 tau - same charge) %2B jets (5.5%)|
+2 leptons (e,mu - same charge) %2B jets (4.5%)|
+3 leptons (&#8805 1 tau) %2B jets (6.9%)|
+3 leptons (e,mu) %2B jets (2.9%)|
+4 leptons %2B jets (1.2%)"
+alt="Sample chart" />
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Task');
+        data.addColumn('number', 'Hours per Day');
+        data.addRows(5);
+        data.setValue(0, 0, 'Work');
+        data.setValue(0, 1, 11);
+        data.setValue(1, 0, 'Eat');
+        data.setValue(1, 1, 2);
+        data.setValue(2, 0, 'Commute');
+        data.setValue(2, 1, 2);
+        data.setValue(3, 0, 'Watch TV');
+        data.setValue(3, 1, 2);
+        data.setValue(4, 0, 'Sleep');
+        data.setValue(4, 1, 7);
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 450, height: 300, title: 'My Daily Activities'});
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>

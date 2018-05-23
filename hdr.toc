@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Calibration des jets}{4}{0}{1}
+\beamer@sectionintoc {2}{Recherche de nouvelle physique}{15}{0}{2}
+\beamer@sectionintoc {3}{Interpr\'etation statistique}{31}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{54}{0}{4}
